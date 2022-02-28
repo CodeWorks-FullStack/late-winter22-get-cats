@@ -7,6 +7,7 @@ export class ValuesController extends BaseController {
     this.router
       .get('', this.getAll)
       .post('', this.create)
+      // .put('/:valueId', this.update)
       .delete('/:valueId', this.remove)
   }
 
