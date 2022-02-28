@@ -16,8 +16,9 @@ export default class DbConnection {
   static async connect(connectionstring = process.env.CONNECTION_STRING || '') {
     const status = 0
     try {
+      // TODO COMMENT THESE LINES OUT
       // const status = await mongoose.connect(connectionstring)
-      logger.log('[CONNECTION TO DB SUCCESSFUL]')
+      // logger.log('[CONNECTION TO DB SUCCESSFUL]')
       // return status
     } catch (e) {
       logger.error(
